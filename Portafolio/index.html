@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Jose Perdomo</title>
+    <link rel="icon" href="/Portafolio/images/logo.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+    <nav class="h-20 w-full bg-slate-900 flex items-center justify-between p-3 fixed text-white z-30">
+        <a href=""><img class="w-14" src="/Portafolio/images/logo.png" alt=""></a>
+        <ul class=" gap-5 hidden sm:flex">
+            <li class="hover:underline"><a href="#yo">Presentación</a></li>
+            <li class="hover:underline"><a href="#herramientas">Herramientas</a></li>
+            <li class="hover:underline"><a href="#proyectos">Proyectos</a></li>
+            <li class="hover:underline"><a href="#contacto">Contacto</a></li>
+        </ul>
+        <input type="checkbox" name="menu" id="menu" class="hidden peer/menu">
+        <label class="flex hover:cursor-pointer sm:hidden" for="menu"><img class="w-9" src="/Portafolio/images/menu.png" alt=""></label>
+        <aside class="hidden w-[200px] h-[225px] bg-slate-900 peer-checked/menu:flex flex-col absolute right-0 top-20 z-50 gap-y-4" data-aos="fade-up">
+            <h1 class="flex justify-center text-xl font-bold">MENU</h1>
+            <ul class=" gap-5 flex flex-col justify-center items-center font-semibold">
+                <li class="hover:underline"><a href="#yo">Presentación</a></li>
+                <li class="hover:underline"><a href="#herramientas">Herramientas</a></li>
+                <li class="hover:underline"><a href="#proyectos">Proyectos</a></li>
+                <li class="hover:underline"><a href="#contacto">Contacto</a></li>
+            </ul>
+        </aside>
+    </nav>
+    <main class="h-full">
+        <section id="yo" class="h-[550px] flex flex-col justify-center items-center bg-gradient-to-b from-slate-900 to-slate-700 z-0">
+            <h1 class="text-5xl font-bold text-[#EDEAE5]" data-aos="fade-down">Hola,</h1>
+            <p class="text-4xl font-bold text-[#EDEAE5]" data-aos="fade-down">Soy Jose Perdomo, Estudiante de Programación Web</p>
+            <img class="w-56" data-aos="fade-down" src="/Portafolio/images/yo.png" alt="">
+        </section>
+        <section id="herramientas" class="h-[1000px] md:h-[250px] bg-gradient-to-b from-slate-700 to-slate-500 flex flex-col items-center gap-y-10">
+            <h1 class="text-5xl font-bold text-[#EDEAE5]">Herramientas que conozco</h1>
+            <div class="flex flex-col gap-10 text-white font-semibold md:flex-row">
+                <article class="flex flex-col items-center" data-aos="fade-up"><img class="w-32" src="https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_html_icon_130541.png" alt=""><span>HTML</span></article>
+                <article class="flex flex-col items-center" data-aos="fade-up"><img class="w-28" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/800px-CSS3_logo.svg.png" alt=""><span>CSS</span></article>
+                <article class="flex flex-col items-center" data-aos="fade-up"><img class="w-32" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/2560px-Sass_Logo_Color.svg.png" alt=""><span>Sass</span></article>
+                <article class="flex flex-col items-center gap-y-3" data-aos="fade-up"><img class="w-32" src="/Portafolio/images/pngwing.com.png" alt=""><span>Tailwind</span></article>
+                <article class="flex flex-col items-center gap-y-2" data-aos="fade-up"><img class="w-32" src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt=""><span>GitHub</span></article>
+            </div>
+        </section>
+        <section id="proyectos" class="h-[1300px] lg:h-[700px] bg-gradient-to-b from-slate-500 to-slate-700 flex flex-col items-center pt-4 gap-10">
+            <h1 class="text-5xl font-bold text-[#EDEAE5]">Mis proyectos</h1>
+            <div class="grid gap-y-10 lg:grid-cols-2 gap-x-8">
+                <a href="https://github.com/josealeperdomo/PROYECTOCLONYOUTUBE" target="_blank" data-aos="fade-up"><article class="w-[350px] sm:w[400px] flex flex-col justify-around items-center bg-slate-800 h-64">
+                    <h1 class="text-2xl font-bold text-[#EDEAE5]">Clon de YouTube</h1>
+                    <img class="w-[310px] sm:[350px]" src="/Portafolio/images/clonyoutube.png" alt="">
+                    <p class="text-white font-semibold">Herramientas usadas: HTML y CSS</p>
+                </article></a>
+    
+                <a href="https://github.com/josealeperdomo/ProyectoClondeAmazon" target="_blank" data-aos="fade-up"><article class="w-[350px] sm:w[400px] flex flex-col justify-around items-center bg-slate-800 h-64">
+                    <h1 class="text-2xl font-bold text-[#EDEAE5]">Clon de Amazon</h1>
+                    <img class="w-[310px] sm:[350px]" src="/Portafolio/images/cllonamazon.png" alt="">
+                    <p class="text-white font-semibold">Herramientas usadas: HTML y Sass</p>
+                </article></a>
+            
+                <a href="" target="_blank" data-aos="fade-up"><article class="w-[350px] sm:w[400px] flex flex-col justify-around items-center bg-slate-800 h-64">
+                    <h1 class="text-2xl font-bold text-[#EDEAE5]">Clon de Google</h1>
+                    <img class="w-[310px] sm:[350px]" src="/Portafolio/images/clongoogle.png" alt="">
+                    <p class="text-white font-semibold">Herramientas usadas: HTML y Tailwind</p>
+                </article></a>
+           
+                <a href="" target="_blank" data-aos="fade-up"><article class="w-[350px] sm:w[400px] flex flex-col justify-around items-center bg-slate-800 h-64">
+                    <h1 class="text-2xl font-bold text-[#EDEAE5]">Página Empresarial</h1>
+                    <img class="w-[310px] sm:[350px]" src="/Portafolio/images/paginaempresarial.png" alt="">
+                    <p class="text-white font-semibold">Herramientas usadas: HTML y Tailwind</p>
+                </article></a>
+            </div>
+        </section>
+        <section id="contacto" class="h-[720px] sm:h-[400px] md:h-[250px] bg-slate-700 flex flex-col items-center gap-7">
+            <h1 class="text-5xl font-bold text-[#EDEAE5]">Contacto</h1>
+            <div class="grid gap-8 font-semibold text-white sm:grid-cols-2 md:grid-cols-4">
+                <a href="https://wa.me/+584126460032" target="_blank" data-aos="zoom-in">
+                    <article class="flex flex-col items-center">
+                        <img class="w-28" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/WhatsApp_icon.png/598px-WhatsApp_icon.png" alt="">
+                        <p>Whatsapp</p>
+                    </article>
+                </a>
+                <a href="https://t.me/+584126460032" target="_blank" data-aos="zoom-in">
+                    <article class="flex flex-col items-center">
+                        <img class="w-28" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/512px-Telegram_logo.svg.png" alt="">
+                        <p>Telegram</p>
+                    </article>
+                </a>
+                <a href="https://instagram.com/joseperdomito" target="_blank" data-aos="zoom-in">
+                    <article class="flex flex-col items-center">
+                        <img class="w-28" src="https://static.vecteezy.com/system/resources/previews/017/743/717/non_2x/instagram-icon-logo-free-png.png" alt="">
+                        <p>Instagram</p>
+                    </article>
+                </a>
+                <a href="mailto:jperdomito0410@gmail.com" target="_blank" data-aos="zoom-in">
+                    <article class="flex flex-col items-center">
+                        <img class="w-28" src="https://cdn.icon-icons.com/icons2/730/PNG/512/gmail_icon-icons.com_62758.png" alt="">
+                        <p>Email</p>
+                    </article>
+                </a>
+            </div>
+        </section>
+    </main>
+    <footer class="h-36 bg-slate-900 text-white font-semibold flex flex-col items-center justify-center">
+        <h1>Coloque sus datos para recibir más información</h1>
+        <form action="" class="flex flex-col items-center gap-2">
+            <input class="w-52" type="text" name="" id="" placeholder="Nombre">
+            <input class="w-52" required type="email" name="" id="" placeholder="Correo Eléctronico">
+            <input class="bg-cyan-400 w-16" type="submit" value="Enviar">
+        </form>
+    </footer>
+
+
+
+    <script>
+        AOS.init();
+      </script>
+</body>
+</html>
